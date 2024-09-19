@@ -5,31 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica2 - Login</title>
     <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="Imagenes/FIUSAC.ico" type="image/x-icon">
+
+    <style>
+        body {
+            background-color: #0303b5;
+            color: white;
+        }
+        .btn-custom {
+            background-color: #42a8a1;
+            color: white; /* Color del texto */
+        }
+        .btn-custom:hover {
+            background-color: #5dc1b9; /* Color al pasar el ratón por encima */
+        }
+        .form-container {
+            background-color: #0404e2; /* Color de fondo del cuadro */
+            padding: 20px; /* Espaciado interno del cuadro */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar un efecto de profundidad */
+        }
+        .title {
+            color: #fff; /* Color del título */
+        }
+        .logo {
+            max-width: 100px; /* Ajusta el tamaño máximo de la imagen */
+            margin-bottom: 20px; /* Espacio debajo de la imagen */
+        }
+    </style>
 </head>
 <body>
-    <div class="container mt-5">
-        <div class="row justify-content-center">
-            <div class="col-md-4 custom-bg">
-                <h2 class="text-center mb-4">Iniciar Sesión</h2>
-                <form>
-                    <div class="form-group mb-3">
-                        <label for="username">Usuario:</label>
-                        <input type="text" class="form-control" id="username" placeholder="Introduce tu usuario">
-                    </div>
+    <div class="container min-vh-100 d-flex flex-column justify-content-center">
+        <div class="text-center mb-4">
+            <img src="Imagenes/Usac_logo.png" alt="Logo" class="logo">
+            <h2 class="title">Iniciar Sesión</h2>
+        </div>
+        <div class="row justify-content-center w-100">
+            <div class="col-md-4">
+                <div class="form-container">
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="username">Usuario:</label>
+                            <input type="text" class="form-control" id="username" placeholder="Introduce tu usuario">
+                        </div>
 
-                    <div class="form-group mb-3">
-                        <label for="password">Contraseña:</label>
-                        <input type="password" class="form-control" id="password" placeholder="Introduce tu contraseña">
-                    </div>
+                        <div class="form-group mb-3">
+                            <label for="password">Contraseña:</label>
+                            <input type="password" class="form-control" id="password" placeholder="Introduce tu contraseña">
+                        </div>
 
-                    <button type="button" class="btn btn-primary btn-lg btn-block">Iniciar Sesión</button>
-                    <button type="button" class="btn btn-secondary btn-lg btn-block">Cancelar</button>
-                </form>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-lg btn-custom">Iniciar Sesión</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-
     </div>
 </body>
 </html>
